@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-center">
+        <div class="notification">
+          <h4 class="notification-header">
+            <img src="./assets/images/icon-success-check.svg" alt="" />Message
+            Sent!
+          </h4>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+        <form>
+          <h2>Contact Us</h2>
+          <div class="form-row">
+            <label for="firstName" class="form-label"
+              >first name <span class="asterisk">*</span></label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="firstName"
+              id="firstName"
+            />
+            <p class="error-message">This field is required</p>
+          </div>
+          <div class="form-row">
+            <label for="lastName" class="form-label"
+              >last name <span class="asterisk">*</span></label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="lastName"
+              id="lastName"
+            />
+            <p class="error-message">This field is required</p>
+          </div>
+          <div class="form-row">
+            <label for="email" class="form-label"
+              >email address <span class="asterisk">*</span></label
+            >
+            <input class="form-input" type="text" name="email" id="email" />
+            <p class="error-message">Please enter a valid email</p>
+          </div>
+          <div class="form-row">
+            <label for="queryType" class="form-label"
+              >query type <span class="asterisk">*</span></label
+            >
+            <div>
+              <div class="query-type">
+                <input
+                  type="radio"
+                  name="queryType"
+                  id="queryType"
+                  value="general enquiry"
+                />
+                <label class="form-label">general enquiry</label>
+              </div>
+              <div class="query-type">
+                <input
+                  type="radio"
+                  name="queryType"
+                  id="queryType"
+                  value="support request"
+                />
+                <label class="form-label">support request</label>
+              </div>
+            </div>
+            <p class="error-message">Please select a query type</p>
+          </div>
+          <div class="form-row">
+            <label for="message" class="form-label"
+              >message <span class="asterisk">*</span></label
+            >
+            <textarea name="message" id="message" class="form-input"></textarea>
+            <p class="error-message">This field is required</p>
+          </div>
+          <div class="form-row">
+            <div class="consent">
+              <input type="checkbox" name="consent" id="consent" />
+              <label for="consent" class="form-label"
+                >I consent to being contacted by the team
+                <span class="asterisk">*</span></label
+              >
+            </div>
+            <p class="error-message">
+              To submit this form, please consent to being contacted
+            </p>
+          </div>
+          <button type="submit" class="btn">submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- First Name This field is required Last Name This field is required Email
+    Address Please enter a valid email address This field is required Query Type
+    General Enquiry Support Request Please select a query type Message This
+    field is required I consent to being contacted by the team To submit this
+    form, please consent to being contacted Submit Message Sent! Thanks for
+    completing the form. We'll be in touch soon! -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Abinandan A T</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
